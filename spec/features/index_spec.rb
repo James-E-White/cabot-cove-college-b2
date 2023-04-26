@@ -33,6 +33,18 @@ RSpec.describe 'resident index' do
        
       end
      end
+# As a visitor,
+# When I visit '/residents'
+# I see the average age of all residents.
+
+# (e.g. "Average Age: 72.5")
+     describe 'when I visit /residents I see the average age of all the residents' do 
+      it 'has the average age of the residents on the page' do 
+        visit '/residents'
+        save_and_open_page
+        expect(page).to have_content("Average Resident Age: 48.0")
+      end
+     end
    end
 end
 
