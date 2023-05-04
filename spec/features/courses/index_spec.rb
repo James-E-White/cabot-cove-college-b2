@@ -46,7 +46,7 @@ RSpec.describe 'Courses Index page do' do
       end
       within "#course_#{@tox.id}" do
         expect(page).to have_content('Residents Enrolled: 2')
-        save_and_open_page
+       
       end
     end
 
