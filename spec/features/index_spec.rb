@@ -48,7 +48,7 @@ RSpec.describe 'resident index' do
       it 'sorts Residents alphabetically' do
         visit '/residents'
 
-         save_and_open_page
+        
         expect("AWWWW Biscuits").to appear_before("Chainsaw!!!!")
         expect("Chainsaw!!!!").to appear_before("Spencer4hire")
         expect("Jessica Fletcher").to appear_before("Dr. Seth Hazlitt")
