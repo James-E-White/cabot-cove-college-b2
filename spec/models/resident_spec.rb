@@ -24,4 +24,5 @@ RSpec.describe Resident, type: :model do
 
     expect(Resident.average_age).to eq(28.0) 
   end
+
 end
